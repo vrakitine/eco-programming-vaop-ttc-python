@@ -1,4 +1,4 @@
-# eco-programming-vaop-python-ttc
+# eco-programming-vaop-ttc-python
 Implementation of Top trading cycle (TTC) algorithm in Python by using v-agent oriented programming (VAOP) paradigm
 ## v-agent oriented programming (VAOP)
 v-agent oriented programming (VAOP) is a programming methodology based on a v-agent script representation of an algorithm that allows a software agent, called v-agent, to perform operations encoded in the v-agent box.  
