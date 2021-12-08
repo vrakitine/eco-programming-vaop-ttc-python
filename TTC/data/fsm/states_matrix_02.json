@@ -1,0 +1,130 @@
+{
+	"s_01_0000":
+		{	
+		"state_descriptions":
+			{
+			"_000":"==> state for - init",
+			"_010":"- Set environment for tracking and logging",
+			"_020":"- max_m = 200"
+			},
+		"v_00":  "s_01_0000",	"00":	"Init",
+		"v_10":  "s_01_0010",	"10":	"Start"
+		},
+	"s_01_0010":
+		{
+		"state_descriptions":
+			{
+			"_000":"==> state for - check max_m and other reason to stop",
+			"_010":"-check if not reached max_m || unassignedArray is empty || All site_capacity=0",
+			"_020":"-add to message to log"
+			},
+		"v_10":  "s_01_0020",	"10":	"ok",
+		"v_20":  "s_01_0080",	"20":	"done - reached max_m or not more loop found",
+		"v_30":  "s_01_0081",	"30":	"done - isUnassignedAppsArrayEmpty()",
+		"v_40":  "s_01_0082",	"40":	"done - isAllSiteCapacity0() = True",
+		"v_50":  "s_01_0020",	"50":	"test"
+		},
+	"s_01_0020":
+		{
+		"state_descriptions":
+			{
+			"_000":"==> state for - if",
+			"_010":"- Remove all sites from all applicant lists where applicant weight > capacity",
+			"_020":"- Remove all applicant from all site lists where applicant in assigned",
+			"_025":"- Remove all applicant from all site lists where applicant site list is empty",
+			"_030":"- getFirstNotCheckedAapplicant from unassignedArray",
+			"-035":"- set gl_max_jump",
+			"_040":"- set gl_taken_sites_capacity_dict",
+			"_050":"- set gl_checked_applicants_code_list",
+			"_060":"- is last applicant?"
+		},
+		"v_10":  "s_01_0010",	"10":	"Yes",
+		"v_20":  "s_01_0035",	"20":	"No",
+		"v_30":  "s_01_0000",	"30":	"test"
+		},
+	"s_01_0035":
+		{
+		"state_descriptions":
+			{
+			"_000":"==> state for - --",
+			"_010":"- check how many jumps",
+			"_020":"- get first site from applicants list",
+			"-030":"- add to gl_checked_applicants_code_list",
+			"_040":"- Update gl_checked_applicants_code_list"
+			},
+		"v_10":  "s_01_0040",		"10":	"ok",
+		"v_20":  "s_01_0020",		"20":	"- not enough capacity",
+		"v_30":  "s_01_0020",		"30 Error ???":   "- rank_list is empty",
+		"v_40":  "Err_0035_030",	"40":	"- site does not exist",
+		"v_50":  "s_01_0020",		"50":	"- if jumps > jump_m"
+		},
+	"s_01_0040":
+		{
+		"state_descriptions":
+			{
+			"_000":"==> state for - --",
+			"_010":"- get first applicant from site's list"
+			},
+		"v_10":  "s_01_0050",	"10":	"ok",
+		"v_20":  "s_01_0020",	"20":	"- rank_list is empty",
+		"v_30":  "Err_0040_020","30":	"- applicant does not exist"
+		},
+	"s_01_0050":
+		{
+		"state_descriptions":
+			{
+			"_000":"==> state for - --",
+			"_010":"- add to stack and check for loop"
+			},
+		"v_10":  "s_01_0060",	"10":	"- loop",
+		"v_20":  "s_01_0035",	"20":	"- no loop"
+		},
+	"s_01_0060":
+		{
+		"state_descriptions":
+			{
+			"_000":"==> state for - --",
+			"_010":"- check if loopArray is done"
+			},
+		"v_10":  "s_01_0020",	"10":	"- loop done",
+		"v_20":  "s_01_0070",	"20":	"- loop not done"
+		},
+	"s_01_0070":
+		{
+		"state_descriptions":
+			{
+			"_000":"==> state for - --",
+			"_010":"- found loop!",
+			"_020":"- add applicants in loop to AssignedApplicant array ???",
+			"-030":"- take  applicant in loopArray",
+			"_040":"- place applicant into result_a",
+			"_050":"- reduce capacity of site by applicant's weight (error if site_capacity <0)",
+			"_060":"- cleanup applicant from loopArray"
+			},
+		"v_10":  "s_01_0060",	"10":	"- loop done"
+		},
+	"s_01_0080":
+		{
+		"state_descriptions":
+			{
+			"_000":"==> state for - Final State",
+			"_010":"- any applicant in unassignedArray is assigned to 0",
+			"_020":"- create file of result_a",
+			"-030":"- create file of result_s (code, capacityleft)",
+			"_040":"- create short log"
+			}
+		},	
+	"s_01_00--":
+		{
+		"state_descriptions":
+			{
+			"_000":"state for - --",
+			"_010":"",
+			"_020":"",
+			"-030":"",
+			"_040":""
+			},
+		"v_10":  "s_01_00--",	"10":	"",
+		"v_20":  "s_01_00--",	"20":	""
+		}
+}

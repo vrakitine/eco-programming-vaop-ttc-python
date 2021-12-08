@@ -1,0 +1,26 @@
+{
+    "100":{
+        "attributes":{
+            "weight": 1
+        },
+        "result":["3333"]
+    },
+    "200":{
+        "attributes":{
+            "weight": 1
+        },
+        "result":["4444"]
+    },
+    "300":{
+        "attributes":{
+            "weight": 1
+        },
+        "result":["1111"]
+    },
+    "400":{
+        "attributes":{
+            "weight": 1
+        },
+        "result":["2222"]
+    }
+}

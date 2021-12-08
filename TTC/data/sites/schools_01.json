@@ -1,0 +1,26 @@
+{
+    "1111":{
+        "attributes":{
+            "capacity": 1
+        },
+        "rank_list":["100","200","300","400"]
+    },
+    "2222":{
+        "attributes":{
+            "capacity": 1
+        },
+        "rank_list":["200","100","300","400"]
+    },
+    "3333":{
+        "attributes":{
+            "capacity": 1
+        },
+        "rank_list":["300","100","200","400"]
+    },
+    "4444":{
+        "attributes":{
+            "capacity": 1
+        },
+        "rank_list":["400","100","200","300"]
+    }
+}

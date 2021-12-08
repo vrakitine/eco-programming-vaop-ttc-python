@@ -1,0 +1,50 @@
+{
+    "i_01":{
+        "attributes":{
+            "weight": 1
+        },
+        "rank_list":["s_02","s_01","s_03","s_04"]
+    },
+    "i_02":{
+        "attributes":{
+            "weight": 1
+        },
+        "rank_list":["s_01","s_02","s_03","s_04"]
+    },
+    "i_03":{
+        "attributes":{
+            "weight": 1
+        },
+        "rank_list":["s_03","s_02","s_01","s_04"]
+    },
+    "i_04":{
+        "attributes":{
+            "weight": 1
+        },
+        "rank_list":["s_03","s_04","s_01","s_02"]
+    },
+    "i_05":{
+        "attributes":{
+            "weight": 1
+        },
+        "rank_list":["s_01","s_03","s_04","s_02"]
+    },
+    "i_06":{
+        "attributes":{
+            "weight": 1
+        },
+        "rank_list":["s_04","s_01","s_02","s_03"]
+    },
+    "i_07":{
+        "attributes":{
+            "weight": 1
+        },
+        "rank_list":["s_01","s_02","s_03","s_04"]
+    },
+    "i_08":{
+        "attributes":{
+            "weight": 1
+        },
+        "rank_list":["s_01","s_02","s_04","s_03"]
+    }
+}

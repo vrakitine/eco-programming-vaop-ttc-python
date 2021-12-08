@@ -1,0 +1,50 @@
+{
+    "i_01":{
+        "attributes":{
+            "weight": 1
+        },
+        "result":["s_02"]
+    },
+    "i_02":{
+        "attributes":{
+            "weight": 1
+        },
+        "result":["s_01"]
+    },
+    "i_03":{
+        "attributes":{
+            "weight": 1
+        },
+        "result":["s_03"]
+    },
+    "i_04":{
+        "attributes":{
+            "weight": 1
+        },
+        "result":["s_03"]
+    },
+    "i_05":{
+        "attributes":{
+            "weight": 1
+        },
+        "result":["s_01"]
+    },
+    "i_06":{
+        "attributes":{
+            "weight": 1
+        },
+        "result":["s_04"]
+    },
+    "i_07":{
+        "attributes":{
+            "weight": 1
+        },
+        "result":["s_02"]
+    },
+    "i_08":{
+        "attributes":{
+            "weight": 1
+        },
+        "result":["s_04"]
+    }
+}

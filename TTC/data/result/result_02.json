@@ -1,0 +1,20 @@
+{
+    "100":{
+        "attributes":{
+            "weight": 1
+        },
+        "rank_list":["2222"]
+    },
+    "200":{
+        "attributes":{
+            "weight": 1
+        },
+        "rank_list":["3333"]
+    },
+    "300":{
+        "attributes":{
+            "weight": 1
+        },
+        "rank_list":["1111"]
+    }
+}
