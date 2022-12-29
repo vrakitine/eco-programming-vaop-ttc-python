@@ -10,7 +10,7 @@ The paradox is that we must change in order for everything to remain the same, t
   Knowledge of the v-agent-oriented approach to programming will be useful not only for developers who receive money for no matter what methodology the software product is made, but for customers who are left alone for many years with the problems of maintaining the operation of a software product and adapting it to changes in external conditions. Remember that the future does not come by itself! We program what we will deal with in the future skillfully or not skillfully, so you need to create your software using v-agent oriented programming in order for you to have a Future.  
   It sounds vague and not concrete, but without a theory it is impossible, since there is nothing in the world more practical than a good theory.  
   
-VSOP paradigm is a part of eco-programming paradigm. For more details visit https://github.com/vrakitine/eco-programming-paradigm  
+VAOP paradigm is a part of eco-programming paradigm. For more details visit https://github.com/vrakitine/eco-programming-paradigm  
 
 
 ## Top trading cycle (TTC) algorithm
